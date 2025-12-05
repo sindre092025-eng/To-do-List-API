@@ -11,4 +11,15 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TodoApi.Application\DTOs\" />
+    <Folder Include="TodoApi.Application\Interfaces\" />
+    <Folder Include="TodoApi.Application\Services\" />
+    <Folder Include="TodoApi.Domain\Enums\" />
+    <Folder Include="TodoApi.Domain\Etities\" />
+    <Folder Include="TodoApi.Infrastructure\Data\" />
+    <Folder Include="TodoApi.Infrastructure\Migrations\" />
+    <Folder Include="TodoApi.Infrastructure\Repositories\" />
+  </ItemGroup>
+
 </Project>
