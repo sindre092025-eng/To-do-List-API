@@ -1,6 +1,6 @@
 namespace TodoApi.Domain.Entities
 {
-    // This class represents a single To-Do item in the system.
+    // so this class is a domain entity that describes a single to-do item in your system.It contains all the data your API needs for one task.
     public class TodoItem
     {
         public int Id { get; set; }// Unique identifier for the item (primary key).
