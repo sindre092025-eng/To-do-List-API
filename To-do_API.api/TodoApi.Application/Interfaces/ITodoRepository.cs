@@ -7,7 +7,7 @@ namespace TodoApi.Domain.Interfaces
     {
         Task<List<TodoItem>> GetAllAsync();// this retrieves all todo items from the data store.
 
-        Task<TodoItem?> GetByIdAsync(int id);// this oune retrieves a single todo item by its ID, incase no item with that ID exists it return NULL.
+        Task<TodoItem?> GetByIdAsync(int id);// this one retrieves a single todo item by its ID, incase no item with that ID exists it return NULL.
 
         Task<TodoItem> AddAsync(TodoItem item);// it adds a new todo item to the data store, it also returns the item after it has been saved.
 
