@@ -1,6 +1,6 @@
-using TodoApi.Domain.Entities;//this bit imports the TodoItem class so it can be used in the interface.
+using To_do_API.api.Models;
 
-namespace TodoApi.Domain.Interfaces
+namespace To_do_API.api.TodoApi.Application.Interfaces
 {
     // Defines a contract for how a Todo repository must behave.
     public interface ITodoRepository

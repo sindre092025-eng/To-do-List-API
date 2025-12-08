@@ -1,4 +1,4 @@
-    namespace TodoApi.Domain.Enums
+namespace To_do_API.api.TodoApi.Domain.Enums
 {
     // these enums defines different possible states for a Todo item.
     public enum TodoStatus
