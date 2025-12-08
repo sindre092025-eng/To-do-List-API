@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TodoApi.Domain.Interfaces;
 
 namespace To_do_API.api.Controllers;
 
@@ -7,7 +8,7 @@ namespace To_do_API.api.Controllers;
 
 [Route("/[Controller]")]
 
-public class ToDoTaskController(ITaskContext context, ILogger<ToDoTaskController> logger) : ControllerBase
+public class ToDoTaskController(IToDoTaskContext taskContext, ILogger<ToDoTaskController> logger) : ControllerBase
 
 {
 
@@ -21,7 +22,7 @@ public class ToDoTaskController(ITaskContext context, ILogger<ToDoTaskController
 
         {
 
-            return Ok(queryDto.BuildQuery(context));
+            return Ok(queryDto.BuildQuery(taskContext));
 
         }
 
