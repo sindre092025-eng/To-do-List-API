@@ -11,4 +11,5 @@ public class ToDoModel(string title, string description, bool completion, DateTi
     public string? Description {get;set;} = description;
     public bool Completion {get;set;} = completion;
     public DateTime Deadline {get;set;} = deadline;
+    public TodoStatus Status { get; set; } = TodoStatus.Pending;// Property that stores the todo's status, which has default as "Pending" when a new TodoItem is created
 }
