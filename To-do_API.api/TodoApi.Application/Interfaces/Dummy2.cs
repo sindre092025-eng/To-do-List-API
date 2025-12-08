@@ -1,4 +1,4 @@
-using TodoApi.Domain.Entities;//Imports the TodoItem class so it can be used in the interface.
+using TodoApi.Domain.Entities;//this bit imports the TodoItem class so it can be used in the interface.
 
 namespace TodoApi.Domain.Interfaces
 {

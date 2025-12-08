@@ -14,5 +14,7 @@ namespace TodoApi.Domain.Entities
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;// Automatically sets the creation time when the item is made.
 
         public DateTime? DueDate { get; set; }// Optional deadline for the task. Null means "no deadline".
+
+        
     }
 }
