@@ -7,6 +7,6 @@ public interface IToDoTaskContext
 {
     
     int Count {get;}
-    List<IToDoModel> GetAllTasks();
-    IToDoModel AddTask(string title, string description, DateTime dueDate);
+    List<IToDoModel> GetAllToDoModels();
+    IToDoModel AddToDoModel(int id,string title, string? description,bool isCompleted,DateTime createdAt, DateTime? dueDate);
 }
