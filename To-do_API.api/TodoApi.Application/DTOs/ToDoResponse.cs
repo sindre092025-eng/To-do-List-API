@@ -4,7 +4,8 @@ public class TodoResponse // Defines data returned to the client (read-only view
 {
     public int Id { get; set; } 
     // Unique identifier
-
+    
+    //::Ikke noe tittel?
     public string Title { get; set; } = ""; 
     // Task title
 

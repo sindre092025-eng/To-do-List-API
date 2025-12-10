@@ -5,6 +5,7 @@ namespace TodoApi.Infrastructure.Repositories; // Namespace for data access impl
 
 public class InMemoryTodoRepository : ITodoRepository // Stores todos in RAM for simplicity
 {
+    //::Readonly?
     private readonly List<TodoItem> _items = new(); 
     // In-memory list that behaves like a fake database
 
@@ -37,6 +38,7 @@ public class InMemoryTodoRepository : ITodoRepository // Stores todos in RAM for
         existing.IsCompleted = item.IsCompleted;
         existing.DueDate = item.DueDate;
 
+        //::Legg inn det som skjer når existing er nullifisert.
         return Task.FromResult(existing); // Return updated item
     }
 

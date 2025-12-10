@@ -14,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Adds automatic Swagger documentation
 
+//::Singelton og scoped?
 builder.Services.AddSingleton<ITodoRepository, InMemoryTodoRepository>();
 // Register repository (Stored in memory, same instance for whole app)
 
