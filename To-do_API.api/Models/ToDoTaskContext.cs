@@ -1,5 +1,6 @@
 ﻿using To_do_API.api.TodoApi.Application.Interfaces;
 using TodoApi.Domain.Interfaces;
+using System;
 
 namespace To_do_API.api.Models;
 
@@ -13,10 +14,12 @@ public class ToDoTaskContext : IToDoTaskContext
         return _tasks;
     }
 
-    public IToDoModel AddToDoModel(int id, string title, string? description, bool isCompleted, DateTime createdAt, DateTime? dueDate)
+    public IToDoModel AddToDoModel(string title, string? description, bool isCompleted, DateTime createdAt, DateTime? dueDate)
     {
         var toDoModel = new ToDoModel(++_nextId, title, description, createdAt, dueDate, isCompleted);
         _tasks.Add(toDoModel);
         return toDoModel;
     }
+
+
 }
